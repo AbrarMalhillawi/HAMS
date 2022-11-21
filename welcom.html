@@ -9,8 +9,16 @@
 <body>
   
     <script>
-        let nameWelcom=JSON.parse(localStorage.getItem("infoUser")).Name;
-        document.write(`welcom,${nameWelcom}`)
+         let nameWelcom=(JSON.parse(localStorage.getItem("infoUser")));
+         let NewEmail=JSON.parse(localStorage.getItem("NewEmail"));
+
+         nameWelcom.map (e =>{   
+		 document.write( `WELCOME, ${e.Name}`);
+         })
+
+        
+        // // document.write(`welcom,${nameWelcom}`)
+        // console.log(nameWelcom);
     </script>
 </body>
 </html>

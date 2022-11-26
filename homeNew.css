@@ -6,10 +6,9 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+   
   }
-  /* body{
-    background-image: url(back1.jpg);
-  } */
+
   nav{
     position: sticky;
     top: 0;
@@ -17,39 +16,41 @@
     height: 100vh;
     left: 0;
     width: 90px;
-    background:rgb(0, 0, 0);
-    opacity: 0.8;
+    background:#223463;
     overflow:hidden;
     transition:.5s;
   }
   
   li {
-      margin-bottom: 60px;
+    
+      margin-bottom: 30px;
   text-decoration: none;
   }
   nav:hover{
     width:280px;
     transition:1s;
   }
-  .logo{
+ .logo{
     text-align: center;
     display: flex;
-    margin-left:-10px;
-    padding-bottom:3rem;
+    margin-left:-7px;
+    
+    
   }
   
   .logo img{
     width: 80px;
     height: 60px;
     border-radius:50%;
+    margin-bottom: 30px;
   }
   .logo span{
     font-weight: bold;
-    /* padding-left: 15px; */
     font-size: 20px;
     text-transform:uppercase;
     color: #E9F7FA;
-  }
+    
+  } 
   a{
     position:relative;
     width: 200px;
@@ -64,7 +65,7 @@
     position: relative;
     width:70px;
     height:50px;
-    top: 20px;
+    top: 7px;
     font-size: 20px;
     text-align: center;
     color: #E9F7FA;
@@ -72,11 +73,13 @@
   }
   .nav-item{
     position: relative;
-    top:10px;
+    top:12px;
     margin-left: 10px;
+    font-size: 20px;
   }
   a:hover{
     background:rgb(159, 159, 159);
+    width: 280px;
   }
   a:hover i{
     color:rgb(0, 0, 0);
@@ -94,34 +97,35 @@
 
   /* 11111111111111111111111111111111111111111111111 */
 
-
+/* 11111111111111111111111111111111111111111111111 */
 .main {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+   padding-top:  10px;
     width: 100%;
     
 
 }
 
 .main-top {
-    display:flex;
+    /* display:flex; */
     width: 100%;
+    color:white;
+    text-align: start;
+    font-size: larger;
+    background-color:#223463;
+    font-weight: bolder;
+    height: 60px;
+   padding-top: 1%;
+   padding-left: 1%;
 }
 
-.main-top i {
-    position:absolute;
-    right: 0;
-    margin: 10px 30px;
-    color : rgb(110, 109, 109);
-    cursor: pointer;
-}
 
 
 .main .user {
     display: flex;
     width: 100%;
-    /* border-bottom: 1px solid rgba(0, 0, 0,0.5); */
+    
 }
 
 .user .card {
@@ -132,8 +136,7 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 1px 3px 9px rgb(21, 119, 179);
-    /* background-image: url('../Images/oran.jfif');
-    background-size: cover; */
+    
 }
 
 .user .card img {
@@ -192,7 +195,15 @@
 }
 
 h1 {
-  color: rgb(27, 58, 96);
+  color: rgb(213, 220, 230);
+  font-size: 40px;
+  background-color:rgb(50, 71, 114);
+  padding: 8px;
+  border-radius: 25px;
+  width:180px;
+  text-align: center;
+ 
+
 }
 body {
   background-color: #E9F7FA;
@@ -220,7 +231,8 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 60px;
-    margin-top: 100px;
+    /* margin-top: 10px; */
+    
     box-shadow: 1px 3px 9px rgb(21, 119, 179);
     background-image: url('./image/1acdc7a2-a363-40e2-a20e-876efbd441ba.jfif');
     background-size:cover;
@@ -251,7 +263,6 @@ body {
 .blog-box {
     width: 350px;
     background-color: #ffffff;
-    /* border : 1px solid #0008ff; */
     margin: 20px;
     border-radius: 5%;
     box-shadow: 1px 3px 9px rgb(21, 119, 179);
@@ -348,9 +359,9 @@ body {
 }
 .slider {
 
-    width: 950px;
-    height: 500px;
-    background:url('../Images/ora.jfif');
+    width: 800px;
+    height: 400px;
+    background:url('./image/ora.png');
     margin: 100px auto;
     animation: slide 9s infinite;
     overflow-x: hidden;
@@ -360,21 +371,22 @@ body {
 @keyframes slide {
 
 25% {
-    background: url('./image/CODE1.jpg');
+    background: url('./image/coding-academy-photo.jpg');
 }
 
 50% {
-    background: url('./image/CODE2.jpg');
+    background: url('./image/CODE1.jpg');
 }
 
 70% {
-    background: url('./image/coding-academy-photo.jpg');
+    background: url('./image/CODE2.jpg');
 }
 
 100% {
     background: url('./image/amro.jpeg');
 }
 
+
 }
 
-/* End Slides Section  */
+/* End Slides Section  *

@@ -12,7 +12,7 @@
      display: flex;
      justify-content:space-evenly;
      flex-direction: row;
-    background: url('./image/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products-plain-studio-background.jpg');
+    /* background: url('./image/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products-plain-studio-background.jpg'); */
 
     /* display: grid;
     grid-template-columns: repeat(2 , 1fr);

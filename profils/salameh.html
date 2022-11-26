@@ -72,12 +72,12 @@
     </div>
     <script>
         
-        document.getElementById("input_name").value = (JSON.parse(localStorage.getItem("information"))).new_name || "Salameh yasin" 
-        document.getElementById("input_departmint").value = (JSON.parse(localStorage.getItem("information"))).new_jopDepartment || "Project Manager " 
-        document.getElementById("input_jopD").value = (JSON.parse(localStorage.getItem("information"))).new_jopTitle || "Academy Manager at orange" 
-        document.getElementById("input_email").value = (JSON.parse(localStorage.getItem("information"))).new_Email || "salamehyasin@gmail.com" 
-        document.getElementById("input_addres").value = (JSON.parse(localStorage.getItem("information"))).new_Addres || "Amman-jordan" 
-        document.getElementById("input_desc").value = (JSON.parse(localStorage.getItem("information"))).new_description || "A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format." 
+        document.getElementById("input_name").value = (JSON.parse(localStorage.getItem("informationS"))).new_name || "Salameh yasin" 
+        document.getElementById("input_departmint").value = (JSON.parse(localStorage.getItem("informationS"))).new_jopDepartment || "Project Manager " 
+        document.getElementById("input_jopD").value = (JSON.parse(localStorage.getItem("informationS"))).new_jopTitle || "Academy Manager at orange" 
+        document.getElementById("input_email").value = (JSON.parse(localStorage.getItem("informationS"))).new_Email || "salamehyasin@gmail.com" 
+        document.getElementById("input_addres").value = (JSON.parse(localStorage.getItem("informationS"))).new_Addres || "Amman-jordan" 
+        document.getElementById("input_desc").value = (JSON.parse(localStorage.getItem("informationS"))).new_description || "A highly resourceful, innovative, and competent PHP developer with extensive experience in the layout, design and coding of websites specifically in PHP format." 
         // function for edit information
         function edit(editor) {
             let input = document.getElementById("editor");
@@ -85,7 +85,7 @@
         }
         
         // function for save new data
-        let arrayinfoEdit= JSON.parse(localStorage.getItem("information"))|| [];
+        let arrayinfoEdit= JSON.parse(localStorage.getItem("informationS"))|| [];
         function save_edit()
         {  
             
@@ -105,7 +105,7 @@
                 new_description:new_description  
             }
             // arrayinfoEdit.push(objInfo);
-            localStorage.setItem("information",JSON.stringify(objInfo));
+            localStorage.setItem("informationS",JSON.stringify(objInfo));
            
            
         }  //End Function save Data

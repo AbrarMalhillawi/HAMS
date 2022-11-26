@@ -14,7 +14,7 @@
 
 <body>
      <!-- input Data Information  +icon for idet data -->
-    <div class="Salameh">
+    <div class="alaa">
         <!-- input pic user -->
         <div>
             <img id="profile_pic" src="../image/alaa.jpeg" alt="profile pic">
@@ -71,12 +71,12 @@
     </div>
     <script>
         
-        document.getElementById("input_name").value = (JSON.parse(localStorage.getItem("information"))).new_name || "Aladdin Amayreh" 
-        document.getElementById("input_departmint").value = (JSON.parse(localStorage.getItem("information"))).new_jopDepartment || "Full Stack Devloper " 
-        document.getElementById("input_jopD").value = (JSON.parse(localStorage.getItem("information"))).new_jopTitle || "Trainer Orange Academy for Programming" 
-        document.getElementById("input_email").value = (JSON.parse(localStorage.getItem("information"))).new_Email || "Aladdin.amayreh95@gmail.com" 
-        document.getElementById("input_addres").value = (JSON.parse(localStorage.getItem("information"))).new_Addres || "Aqaba-jordan" 
-        document.getElementById("input_desc").value = (JSON.parse(localStorage.getItem("information"))).new_description || "welcom of coding academy welcom of coding academy welcom of coding academy" 
+        document.getElementById("input_name").value = (JSON.parse(localStorage.getItem("informationA"))).new_name || "Aladdin Amayreh" 
+        document.getElementById("input_departmint").value = (JSON.parse(localStorage.getItem("informationA"))).new_jopDepartment || "Full Stack Devloper " 
+        document.getElementById("input_jopD").value = (JSON.parse(localStorage.getItem("informationA"))).new_jopTitle || "Trainer Orange Academy for Programming" 
+        document.getElementById("input_email").value = (JSON.parse(localStorage.getItem("informationA"))).new_Email || "Aladdin.amayreh95@gmail.com" 
+        document.getElementById("input_addres").value = (JSON.parse(localStorage.getItem("informationA"))).new_Addres || "Aqaba-jordan" 
+        document.getElementById("input_desc").value = (JSON.parse(localStorage.getItem("informationA"))).new_description || "welcom of coding academy welcom of coding academy welcom of coding academy" 
         // function for edit information
         function edit(editor) {
             let input = document.getElementById("editor");
@@ -84,7 +84,7 @@
         }
         
         // function for save new data
-        let arrayinfoEdit= JSON.parse(localStorage.getItem("information"))|| [];
+        let arrayinfoEdit= JSON.parse(localStorage.getItem("informationA"))|| [];
         function save_edit()
         {  
             
@@ -104,7 +104,7 @@
                 new_description:new_description  
             }
             // arrayinfoEdit.push(objInfo);
-            localStorage.setItem("information",JSON.stringify(objInfo));
+            localStorage.setItem("informationA",JSON.stringify(objInfo));
            
            
         }  //End Function save Data

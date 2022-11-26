@@ -71,12 +71,12 @@
     </div>
     <script>
         
-        document.getElementById("input_name").value = (JSON.parse(localStorage.getItem("information"))).new_name || "Hadeel Alshahwan" 
-        document.getElementById("input_departmint").value = (JSON.parse(localStorage.getItem("information"))).new_jopDepartment || "Experienced Job Coach " 
-        document.getElementById("input_jopD").value = (JSON.parse(localStorage.getItem("information"))).new_jopTitle || "Job Coaching Team Leader" 
-        document.getElementById("input_email").value = (JSON.parse(localStorage.getItem("information"))).new_Email || "Hadeelalshahwan@gmail.com" 
-        document.getElementById("input_addres").value = (JSON.parse(localStorage.getItem("information"))).new_Addres || "Amman-jordan" 
-        document.getElementById("input_desc").value = (JSON.parse(localStorage.getItem("information"))).new_description || "Skilled in Career Development, Coaching, Sales, Agility, and Communication. Strong community and social services professional with a Bachelor's degree focused in Political Science from University of Jordan." 
+        document.getElementById("input_name").value = (JSON.parse(localStorage.getItem("informationH"))).new_name || "Hadeel Alshahwan" 
+        document.getElementById("input_departmint").value = (JSON.parse(localStorage.getItem("informationH"))).new_jopDepartment || "Experienced Job Coach " 
+        document.getElementById("input_jopD").value = (JSON.parse(localStorage.getItem("informationH"))).new_jopTitle || "Job Coaching Team Leader" 
+        document.getElementById("input_email").value = (JSON.parse(localStorage.getItem("informationH"))).new_Email || "Hadeelalshahwan@gmail.com" 
+        document.getElementById("input_addres").value = (JSON.parse(localStorage.getItem("informationH"))).new_Addres || "Amman-jordan" 
+        document.getElementById("input_desc").value = (JSON.parse(localStorage.getItem("informationH"))).new_description || "Skilled in Career Development, Coaching, Sales, Agility, and Communication. Strong community and social services professional with a Bachelor's degree focused in Political Science from University of Jordan." 
         // function for edit information
         function edit(editor) {
             let input = document.getElementById("editor");
@@ -84,7 +84,7 @@
         }
         
         // function for save new data
-        let arrayinfoEdit= JSON.parse(localStorage.getItem("information"))|| [];
+        let arrayinfoEdit= JSON.parse(localStorage.getItem("informationH"))|| [];
         function save_edit()
         {  
             
@@ -104,7 +104,7 @@
                 new_description:new_description  
             }
             // arrayinfoEdit.push(objInfo);
-            localStorage.setItem("information",JSON.stringify(objInfo));
+            localStorage.setItem("informationH",JSON.stringify(objInfo));
            
            
         }  //End Function save Data
